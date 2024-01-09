@@ -9,7 +9,6 @@ module.exports = {
             res.status(500).json(err)
         }
     },
-
     async getSingleUser(req, res) {
         try {
             const user = await User.findOne({ _id: req.params.userId });
@@ -24,7 +23,6 @@ module.exports = {
         }
     },
 
-    // This will create a new user
     async createUser(req, res) {
         try {
             const dbUserData = await User.create(req.body);
@@ -46,7 +44,6 @@ module.exports = {
         }
     },
 
-    // Modify by userID that requires ID and JSON parameters
     async editUser(req, res) {
         try {
             const userId = req.params.userId;
@@ -57,7 +54,6 @@ module.exports = {
         }
     },
 
-    // Finds user by ID, then add friend based upon JSON file we included.
     async addFriend(req, res) {
         try {
             const userId = req.params.userId;
@@ -75,7 +71,6 @@ module.exports = {
         }
     },
 
-    // Finds user by ID, then delete friend based upon JSON file we included.
     async deleteFriend(req, res) {
         try {
             const userId = req.params.userId;
