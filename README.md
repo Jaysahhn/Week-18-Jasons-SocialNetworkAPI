@@ -2,6 +2,7 @@
 
 ## Description
 
+This project shows how a user can be created, react, and have thoughts of their own. You can also delete users, thoughts, friends, and reactions too! You can also edit thoughts and users if you don't like what you put down or don't like your username.
 
 ## Installation
 
@@ -9,8 +10,8 @@ Node Package Manager (NPM), express, mongoose, uuid
 
 ## Usage
 
-[Insert Text]() || 
-[Insert Text]() 
+Walkthrough: https://drive.google.com/file/d/1kyWQx1-qhMB_ogSlhylZfyzku5-vKsdS/view
+[insomnia](https://i.gyazo.com/b55d20925f1d2d6d21359ad88b2dd0ab.png)
 
 ## Credits
 
