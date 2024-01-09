@@ -5,7 +5,7 @@
 
 ## Installation
 
-Node Package Manager (NPM), express,
+Node Package Manager (NPM), express, mongoose, uuid 
 
 ## Usage
 
