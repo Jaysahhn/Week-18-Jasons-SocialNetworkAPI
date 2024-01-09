@@ -14,7 +14,7 @@ module.exports = {
             const thought = await Thought.findOne({ _id: req.params.thoughtId });
 
             if (!thought) {
-                return res.status(404).json({ message: 'No thought associated with that ID' });
+                return res.status(404).json({ message: 'No thought with that ID' });
             }
 
             res.json(thought);
@@ -22,7 +22,7 @@ module.exports = {
             res.status(500).json(err);
         }
     },
-    // This will create a new thought
+
     async createThought(req, res) {
         try {
             const dbUserData = await Thought.create(req.body);
@@ -41,7 +41,6 @@ module.exports = {
         }
     },
 
-    // This will delete a thought by ID
     async deleteThought(req, res) {
         try {
             const deleteThought = await Thought.deleteOne({ _id: req.params.userId });
@@ -87,5 +86,4 @@ module.exports = {
             res.status(500).json(err);
         }
     },
-
-};
+}; 
